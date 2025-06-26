@@ -1,0 +1,65 @@
+{
+  "name": "bdy-cli-extension",
+  "title": "BDY CLI",
+  "description": "Manage BDY tunnels and expose local services to the internet",
+  "icon": "command-icon.png",
+  "author": "your-name",
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "list-tunnels",
+      "title": "List Tunnels",
+      "description": "List all active BDY tunnels",
+      "mode": "view"
+    },
+    {
+      "name": "create-tunnel",
+      "title": "Create Tunnel",
+      "description": "Create a new HTTP/TCP/TLS tunnel",
+      "mode": "view"
+    },
+    {
+      "name": "agent-status",
+      "title": "Agent Status",
+      "description": "Check BDY agent status and manage service",
+      "mode": "view"
+    },
+    {
+      "name": "config",
+      "title": "Configuration",
+      "description": "Manage BDY configuration and tokens",
+      "mode": "view"
+    },
+    {
+      "name": "quick-http",
+      "title": "Quick HTTP Tunnel",
+      "description": "Quickly start an HTTP tunnel",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.100.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@raycast/eslint-config": "1.0.6",
+    "@types/node": "24.0.3",
+    "@types/react": "19.1.8",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0",
+    "prettier": "^3.0.0",
+    "typescript": "^4.4.3",
+    "typescript-eslint": "^8.35.0"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
