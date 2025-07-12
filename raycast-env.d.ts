@@ -37,4 +37,3 @@ declare namespace Arguments {
   /** Arguments passed to the `quick-http` command */
   export type QuickHttp = {}
 }
-
